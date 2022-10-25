@@ -1,9 +1,9 @@
 function solution(n) {
     let result = 1;
-    let i = 1;
-    for (i = 1; i <= n; i++) {
-        result *= i;
-        if (result > n) return i - 1;
+    let maxI = 1;
+    for (maxI = 1; maxI <= n; maxI++) {
+        result *= maxI;
+        if (result > n) return maxI - 1;
     }
-    return i - 1;
+    return maxI - 1;
 }
