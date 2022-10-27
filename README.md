@@ -1,4 +1,4 @@
-# Programer-LV0 기초 다지기 study 🔥
+# Programer-LVUP study 🔥
 
 ### 스터디 목표 ✅
 
