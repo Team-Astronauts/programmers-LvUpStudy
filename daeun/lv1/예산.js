@@ -1,6 +1,6 @@
 function solution(d, budget) {
     let answer = 0;
-    const sortedD = d.sort((a, b) => a - b)
+    const sortedD = [...d].sort((a, b) => a - b)
 
     for (let i in sortedD) {        
         budget -= sortedD[i]
