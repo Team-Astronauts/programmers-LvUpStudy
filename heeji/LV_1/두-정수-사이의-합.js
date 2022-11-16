@@ -5,3 +5,7 @@ function solution(a, b) {
     }
     return answer;
 }
+
+// function solution(a, b){
+//     return (a+b)*(Math.abs(b-a)+1)/2; // 가우스 공식
+// }
