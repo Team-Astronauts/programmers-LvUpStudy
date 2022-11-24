@@ -1,5 +1,4 @@
 function solution(n, m) {
-    let gcd = 1;
     const answer = [];
     const max = Math.max(n, m);
     const min = Math.min(n, m);
@@ -12,7 +11,7 @@ function solution(n, m) {
     answer.push(gcd);
     
     answer.push(
-        gcd !== min ? (max/gcd) * (min/gcd) * gcd : gcd * (max/gcd)
+        gcd !== min ? (max/gcd) * (min/gcd) * gcd : min * (max/min)
     )
     return answer;
 }
