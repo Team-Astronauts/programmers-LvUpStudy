@@ -21,3 +21,18 @@ function solution(id_pw, db) {
         return "fail";
     }
 }
+
+function solution2(id_pw, db) {
+    const [id, pw] = id_pw;
+    const map = new Map(db);
+
+    if (map.has(id)) {
+        if (map.get(id) === pw) {
+            return "login";
+        } else {
+            return "wrong pw";
+        }
+    } else {
+        return "fail";
+    }
+}
