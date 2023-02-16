@@ -15,3 +15,17 @@ function solution(s) {
   }
   return answer;
 }
+
+function solution(s) {
+  const array = {};
+  const answer = [];
+  for (let i = 0; i < s.length; i++) {
+    if (array[s[i]] === undefined) {
+      answer.push(-1);
+    } else {
+      answer.push(i - array[s[i]]);
+    }
+    array[s[i]] = i;
+  }
+  return answer;
+}
