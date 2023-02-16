@@ -8,3 +8,14 @@ function solution(k, m, score) {
   }
   return answer;
 }
+
+function solution(k, m, score) {
+  let answer = 0;
+  score.sort((a, b) => b - a);
+  while (score.length >= m) {
+    const box = score.splice(score.length - m, m);
+    const price = m * box[0];
+    answer += price;
+  }
+  return answer;
+}
