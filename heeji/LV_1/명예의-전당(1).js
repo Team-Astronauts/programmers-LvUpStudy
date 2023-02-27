@@ -12,3 +12,14 @@ function solution(k, score) {
   });
   return answer;
 }
+
+function solution(k, score) {
+  const answer = [];
+  const link = [];
+  score.forEach((v) => {
+    link.push(v);
+    link.sort((a, b) => b - a).splice(k);
+    answer.push(Math.min.apply(null, link));
+  });
+  return answer;
+}
