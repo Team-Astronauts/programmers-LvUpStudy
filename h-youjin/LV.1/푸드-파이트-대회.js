@@ -3,7 +3,7 @@ function solution(food) {
   let answer = [];
   let halfArr = [];
 
-  foodArr.reduce((acc, cur, idx) => {
+  foodArr.reduce((_, cur, idx) => {
     for (let i = 0; i < cur; i++) {
       halfArr.push(idx);
     }
